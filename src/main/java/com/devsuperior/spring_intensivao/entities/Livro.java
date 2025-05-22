@@ -1,12 +1,21 @@
 package com.devsuperior.spring_intensivao.entities;
 
+import jakarta.persistence.*;
+
 import java.util.Objects;
 
+@Entity
+@Table(name = "tb_livro")
 public class Livro {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String title;
     private String autor;
+
+    @Column(name = "livro_year")
     private Integer year;
     private String genre;
     private String imgUrl;
