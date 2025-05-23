@@ -19,7 +19,11 @@ public class Livro {
     private Integer year;
     private String genre;
     private String imgUrl;
+
+    @Column(columnDefinition = "TEXT")
     private String shortDescription;
+
+    @Column(columnDefinition = "TEXT")
     private String longDescription;
 
     public Livro() {}
