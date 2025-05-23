@@ -45,8 +45,8 @@ public class Livro {
     public String getTitle() {return title;}
     public void setTitle(String title) {this.title = title;}
 
-    public String getAutor() {return author;}
-    public void setAutor(String autor) {this.author = author;}
+    public String getAuthor() {return author;}
+    public void setAuthor(String author) {this.author = author;}
 
     public Integer getYear() {return year;}
     public void setYear(Integer year) {this.year = year;}
