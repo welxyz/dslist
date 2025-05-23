@@ -13,7 +13,7 @@ public class Livro {
     private Long id;
 
     private String title;
-    private String autor;
+    private String author;
 
     @Column(name = "livro_year")
     private Integer year;
@@ -28,10 +28,10 @@ public class Livro {
 
     public Livro() {}
 
-    public Livro(Long id, String title, String autor, Integer year, String genre, String imgUrl, String shortDescription, String longDescription) {
+    public Livro(Long id, String title, String author, Integer year, String genre, String imgUrl, String shortDescription, String longDescription) {
         this.id = id;
         this.title = title;
-        this.autor = autor;
+        this.author = author;
         this.year = year;
         this.genre = genre;
         this.imgUrl = imgUrl;
@@ -45,8 +45,8 @@ public class Livro {
     public String getTitle() {return title;}
     public void setTitle(String title) {this.title = title;}
 
-    public String getAutor() {return autor;}
-    public void setAutor(String autor) {this.autor = autor;}
+    public String getAutor() {return author;}
+    public void setAutor(String autor) {this.author = author;}
 
     public Integer getYear() {return year;}
     public void setYear(Integer year) {this.year = year;}
